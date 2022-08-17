@@ -16,6 +16,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
+    letter-spacing: 0.03em;
 }
 
 .link {
@@ -38,7 +39,6 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
 }
 
 .logo-black {
@@ -91,6 +91,7 @@ img {
 /* button */
 
 .button {
+    font-family: inherit;
     cursor: pointer;
     color: var(--white-color);
     background-color: var(--tuch-color);
@@ -102,7 +103,7 @@ img {
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.86;
      display: flex;
     align-items: center;
     text-align: center;
@@ -117,15 +118,22 @@ img {
 /* section two */
 
 .hide {
-    display: none;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px
 }
 
 .subtitle {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
@@ -133,7 +141,6 @@ img {
     color: var(--contact-color);
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
 }
 
 /* section three */
@@ -143,7 +150,6 @@ img {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 /* our team */
@@ -162,7 +168,6 @@ img {
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .desc-position {
@@ -170,7 +175,6 @@ img {
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 /* footer */
@@ -183,16 +187,14 @@ img {
     color: var(--white-color);
     font-style: normal;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 
 .footer-contacts {
     color: var(--footer-contacts-color);
     font-style: normal;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 
 .address:hover,
@@ -205,6 +207,7 @@ img {
 /* portfolio filtr */
 
 .btn {
+    font-family: inherit;
     background-color: var(--our-team-color);
     color: var(--main-color);
     font-weight: 500;
@@ -227,6 +230,8 @@ img {
 /* portfolio exampl */
 
 .subtitle-portfolio {
+    text-decoration: none;
+    color: var(--main-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -237,5 +242,4 @@ img {
     color: var(--contact-color);
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
